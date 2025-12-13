@@ -88,7 +88,7 @@ def _time_ttft_plus_prefill(model, encoded_tensor, ctx_len, use_cache: bool):
     )
     return time.perf_counter() - t0
 
-def main():
+def run_inference_ttft_prefill_bench():
     torch.manual_seed(123)
     # CPU-only as requested; leave this as-is if you want to stay on CPU.
     device = torch.device("cpu")
@@ -134,6 +134,5 @@ def main():
     print("-"*98)
     print("Notes: 'cache' does prefill (prompt) + 1 decode step using KV; 'nocache' runs a single full forward of length L.")
 
-
 if __name__ == "__main__":
-    main()
+    run_inference_ttft_prefill_bench()
