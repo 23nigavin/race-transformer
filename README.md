@@ -1,6 +1,6 @@
-# RACE Transformer (Preliminary Prototype)
+# Sketch Based Attention Prototypes
 
-This repository contains a preliminary experiment integrating RACE sketching into transformer attention layers.
+This repository contains preliminary experiments integrating MACH and RACE sketching into transformer attention layers.
 
 ## Running the Benchmark
 
